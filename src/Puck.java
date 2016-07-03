@@ -14,7 +14,7 @@ public class Puck
         this.radious = radious;
         this.position = new PVector(0,0);
     }
-    public void draw(float fieldScale)
+    public void draw(float scale)
     {
         parent.stroke(127);
         parent.fill(127);
