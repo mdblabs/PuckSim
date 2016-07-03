@@ -3,34 +3,32 @@
  */
 import processing.core.*;
 
-public class Puck
+class Puck extends PApplet
 {
     PApplet parent;
 
-    public Puck(PApplet _parent, float weigth, float radious)
+    Puck(PApplet _parent, float weigth, float radious)
     {
         this.parent = _parent;
         this.weight = weigth;
         this.radious = radious;
         this.position = new PVector(0,0);
     }
-    public void draw(float scale)
+    void draw(float scale)
     {
-        parent.stroke(127);
-        parent.fill(127);
-        parent.ellipse(100,100,100,100);
+
 
     }
-    public void setPos(float x, float y)
+    void setPos(float x, float y)
     {
         this.position.x = x;
         this.position.y = y;
     }
-    public void setSpeed()
+    void setSpeed()
     {
 
     }
-    public void setAcc()
+    void setAcc()
     {
 
     }
@@ -41,6 +39,10 @@ public class Puck
     public PVector getSpeed()
     {
         return this.speed;
+    }
+    public float getRadious()
+    {
+        return this.radious;
     }
 
     public PVector getAcc()

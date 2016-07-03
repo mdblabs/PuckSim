@@ -5,17 +5,19 @@ import processing.core.PApplet;
 
 public class PuckSim extends PApplet
 {
-    Puck thePuck;
+    Field theField;
     public void settings()
     {
-        size(800,600);
-        thePuck = new Puck(this,100,25);
+        size(1500,800);
+        theField = new Field(this,width/2,height/2,24);
     }
 
     public void draw()
     {
-        thePuck.setPos(400,400);
-        thePuck.draw(200);
+        background(0,38,153);
+        theField.draw(1);
+        //save("imgs/hockeyField1.tif");
+        exit();
 
     }
 }
