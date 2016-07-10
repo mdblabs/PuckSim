@@ -14,11 +14,7 @@ class Puck extends PApplet
         this.radious = radious;
         this.position = new PVector(0,0);
     }
-    void draw(float scale)
-    {
 
-
-    }
     void setPos(float x, float y)
     {
         this.position.x = x;
